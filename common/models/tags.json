@@ -1,17 +1,13 @@
 {
-  "name": "notes",
-  "plural": "notes",
+  "name": "tags",
+  "plural": "tags",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
+    "name": {
       "type": "string",
       "required": true
     }
