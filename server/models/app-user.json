@@ -1,35 +1,25 @@
 {
-  "name": "Note",
-  "plural": "notes",
-  "base": "PersistedModel",
+  "name": "AppUser",
+  "plural": "users",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "properties": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "string",
-      "required": true
-    }
-  },
+  "properties": {},
   "validations": [],
   "relations": {
-    "tags": {
-      "type": "hasAndBelongsToMany",
-      "model": "Tag",
+    "appAccessTokens": {
+      "type": "hasMany",
+      "model": "AppAccessToken",
       "foreignKey": "",
-      "through": "NoteTag",
       "options": {
         "nestRemoting": true
       }
     },
-    "appUser": {
-      "type": "belongsTo",
-      "model": "AppUser",
+    "notes": {
+      "type": "hasMany",
+      "model": "Note",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
