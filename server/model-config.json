@@ -34,5 +34,8 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "notes": {
+    "dataSource": "psql-db"
   }
 }
