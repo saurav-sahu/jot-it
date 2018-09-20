@@ -1,5 +1,5 @@
 {
-  "name": "notes",
+  "name": "Note",
   "plural": "notes",
   "base": "PersistedModel",
   "idInjection": true,
@@ -17,7 +17,17 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "tags": {
+      "type": "hasAndBelongsToMany",
+      "model": "Tag",
+      "foreignKey": "",
+      "through": "NoteTag",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

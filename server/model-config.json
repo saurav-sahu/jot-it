@@ -35,11 +35,14 @@
     "dataSource": "db",
     "public": false
   },
-  "notes": {
+  "Note": {
     "dataSource": "psql-db"
   },
-  "tags": {
+  "Tag": {
+    "dataSource": "psql-db"
+  },
+  "NoteTag": {
     "dataSource": "psql-db",
-    "public": true
+    "public": false
   }
 }

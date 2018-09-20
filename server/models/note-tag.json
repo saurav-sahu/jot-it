@@ -1,14 +1,13 @@
 {
-  "name": "Tag",
-  "plural": "tags",
+  "name": "NoteTag",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
+    "noteId": {
+      "type": "number",
       "required": true
     }
   },
