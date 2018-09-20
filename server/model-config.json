@@ -14,7 +14,7 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "psql-db"
   },
   "AccessToken": {
     "dataSource": "db",
