@@ -20,16 +20,16 @@
   "relations": {
     "tags": {
       "type": "hasAndBelongsToMany",
-      "model": "Tag",
+      "model": "tag",
       "foreignKey": "",
-      "through": "NoteTag",
+      "through": "noteTag",
       "options": {
         "nestRemoting": true
       }
     },
     "user": {
       "type": "belongsTo",
-      "model": "AppUser",
+      "model": "user",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
