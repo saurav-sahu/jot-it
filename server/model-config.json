@@ -30,8 +30,8 @@
     "relations": {
       "user": {
         "type": "belongsTo",
-        "model": "AppUser",
-        "foreignKey": "appUserId"
+        "model": "user",
+        "foreignKey": "userId"
       }
     }
   },
@@ -39,17 +39,17 @@
     "dataSource": "db",
     "public": false
   },
-  "Note": {
+  "note": {
     "dataSource": "psql-db"
   },
-  "Tag": {
+  "tag": {
     "dataSource": "psql-db"
   },
-  "NoteTag": {
+  "noteTag": {
     "dataSource": "psql-db",
     "public": false
   },
-  "AppUser": {
+  "user": {
     "dataSource": "psql-db"
   }
 }

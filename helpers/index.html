@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Document</title>
+</head>
+
+<body>
+  <button id='runButton'>Run</button>
+  <code id='result'></code>
+  <script type='text/javascript' async>
+    const divElement = document.getElementById('result');
+
+    const run = async () => {
+      const loginRequest = await fetch('http://localhost:3000/api/users/login', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          username: 'ss',
+          password: 'pass'
+        })
+      });
+
+      const loginResponse = await loginRequest.json();
+      const { id } = loginResponse;
+
+      divElement.innerText = id;
+    }
+
+    document.getElementById('runButton').onclick = run;
+  </script>
+</body>
+
+</html>

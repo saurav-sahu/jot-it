@@ -1,7 +1,7 @@
 const hiddenMethodNames = require('../constants/hidden-methods');
 
-module.exports = (Tags) => {
+module.exports = (tags) => {
   hiddenMethodNames.forEach(
-    method => Tags.disableRemoteMethodByName(method),
+    method => tags.disableRemoteMethodByName(method),
   );
 };

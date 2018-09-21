@@ -1,5 +1,5 @@
 {
-  "name": "Note",
+  "name": "note",
   "plural": "notes",
   "base": "PersistedModel",
   "idInjection": true,
@@ -27,7 +27,7 @@
         "nestRemoting": true
       }
     },
-    "appUser": {
+    "user": {
       "type": "belongsTo",
       "model": "AppUser",
       "foreignKey": "",
@@ -36,13 +36,6 @@
       }
     }
   },
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$owner",
-      "permission": "ALLOW"
-    }
-  ],
+  "acls": [],
   "methods": {}
 }

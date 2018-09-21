@@ -1,5 +1,5 @@
 {
-  "name": "AppUser",
+  "name": "user",
   "plural": "users",
   "base": "User",
   "idInjection": true,
@@ -19,20 +19,13 @@
     },
     "notes": {
       "type": "hasMany",
-      "model": "Note",
+      "model": "note",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
       }
     }
   },
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$owner",
-      "permission": "ALLOW"
-    }
-  ],
+  "acls": [],
   "methods": {}
 }

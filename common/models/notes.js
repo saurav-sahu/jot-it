@@ -1,7 +1,7 @@
 const hiddenMethodNames = require('../constants/hidden-methods');
 
-module.exports = (Notes) => {
+module.exports = (notes) => {
   hiddenMethodNames.forEach(
-    method => Notes.disableRemoteMethodByName(method),
+    method => notes.disableRemoteMethodByName(method),
   );
 };
