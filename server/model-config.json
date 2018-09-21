@@ -40,10 +40,12 @@
     "public": false
   },
   "note": {
-    "dataSource": "psql-db"
+    "dataSource": "psql-db",
+    "public": false
   },
   "tag": {
-    "dataSource": "psql-db"
+    "dataSource": "psql-db",
+    "public": false
   },
   "noteTag": {
     "dataSource": "psql-db",
