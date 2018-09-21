@@ -17,6 +17,23 @@
       "extended": true,
       "limit": "100kb"
     },
-    "cors": false
+    "cors": false,
+    "sharedMethods": {
+      "patchOrCreate": false,
+      "replaceOrCreate": false,
+      "count": false,
+      "find": false,
+      "findOne": false,
+      "upsert": false,
+      "updateAll": false,
+      "prototype.updateAttributes": false,
+      "createChangeStream": false,
+      "*accessToken*": false,
+      "*replace*": false,
+      "*upsertWithWhere*": false,
+      "prototype.patchAttributes": false,
+      "*reset*": false,
+      "*verify*": false
+    }
   }
 }
